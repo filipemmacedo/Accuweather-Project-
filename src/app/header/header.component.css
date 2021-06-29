@@ -1,0 +1,19 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-250px);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: fit-content;
+    justify-content: space-between;
+  }
+  
+  .wrapper > app-current {
+    margin: auto;
+  }
+  

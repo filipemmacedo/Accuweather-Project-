@@ -1,0 +1,54 @@
+.daily-container {
+  display: flex;
+  width: 100vw;
+  transform: translateY(-80px);
+}
+
+.daily-card {
+  display: block;
+  width: 100%;
+  padding: 0px 12px 0;
+}
+  
+.infos-card {
+  max-width: 900px;
+  background-color: white;
+  border-top: 1px solid whitesmoke;
+  border-left: 2px solid orangered;
+  margin: 10px auto;
+  height: auto;
+  list-style: none;
+}
+  
+.daily {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+}
+
+.date>span{
+  display: flex;
+  flex-direction: column;
+  color: lightgray;
+}
+
+.max_temp{
+  font-size: 24px;
+}
+
+.daily li img {
+  height: 50px;
+  width: 50px;
+}
+  
+.fa-tint {
+  color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .max_temp{
+    font-size: 18px;
+  }
+}

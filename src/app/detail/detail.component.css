@@ -1,0 +1,14 @@
+.sub-links{
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sub-links>a{
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+  
+}
+.sub-links > a:hover{
+  border-bottom: 1px solid orangered;
+}

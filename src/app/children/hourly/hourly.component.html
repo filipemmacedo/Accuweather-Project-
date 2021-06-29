@@ -1,0 +1,19 @@
+
+    <app-header></app-header>
+
+
+<div class='hourly-container'>
+    <ul class="hourly-card">
+        <li class="infos-card" *ngFor="let hourly of weather">
+            <section class='hourly'>
+                <li class="date"> {{ hourly.timestamp_local| date:'hh'}} hs
+                    <span> {{ hourly.timestamp_local | date: 'dd/MM'}}</span> </li>
+                <li><img src="https://www.weatherbit.io/static/img/icons/{{hourly.weather.icon}}.png"></li>
+                <li class="temp">{{hourly.app_temp}}º </li>
+                <li class="real-feel">RealFeelº{{hourly.temp}}</li>
+                <li class="descript">{{hourly.weather.description}}</li>
+                <li><i class="fas fa-tint"> </i> &nbsp; {{ hourly.rh}} %</li>
+                </section>
+        </li>
+   </ul>
+</div>

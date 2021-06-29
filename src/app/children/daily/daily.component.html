@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+
+<div class='daily-container'>
+    <ul class="daily-card">
+        <li class="infos-card" *ngFor="let daily of weather">
+            <article class='daily'>
+                <li class="date">{{ daily.datetime |  date: 'EEEE' }}
+                    <span> {{daily.datetime | date: 'dd/MM'}}</span>
+                </li>
+                <li><img src="https://www.weatherbit.io/static/img/icons/{{daily.weather.icon}}.png"></li>
+                <li class="max_temp">{{daily.app_max_temp}}º <sub>/{{daily.app_min_temp}}º</sub></li>
+                <li><i class="fas fa-tint"></i> &nbsp; {{ daily.rh }} %</li>
+            </article>
+        </li>
+   </ul>
+</div>
+
+

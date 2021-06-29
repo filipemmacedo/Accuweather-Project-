@@ -1,0 +1,14 @@
+
+<div class="current">
+
+    <a routerLink="/detail/now">
+      <span class="location">
+        {{ geoLocation.city }}, {{ weather.country_code }}
+      </span>
+    <div class="icon" >
+      <img src='{{ iconImg }}'>
+    </div>
+      <span class="temp">{{ weather.temp }}ºC</span>
+    </a>
+
+  </div>

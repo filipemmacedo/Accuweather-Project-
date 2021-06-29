@@ -1,0 +1,60 @@
+<app-header></app-header>
+
+<div class="global-container">
+    <div class='card-container'>
+        <div class="card">
+            <div class="card-header">
+                <h2>Tempo Atual</h2>
+                <p>{{ hoje | date:'shortTime'}}</p>
+            </div>
+            <div class="corpo">
+                <p ></p>
+                <div class="icon" >
+                    <img class="state"src='{{ iconImg }}'>
+                </div>
+                <p class="temp">{{ weather.temp }}º </p> <sub class="sub">C</sub> 
+            </div>
+            <div class="realfeel">
+                <p >RealFeelº{{weather.app_temp}}</p>
+            </div>
+            <div class="card-bottom">
+                <p >{{description}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="detail-item ">
+            <div>Vento</div>
+            <div>Direction {{weather.wind_cdir_full}}</div>
+        </div>
+        
+        <div class="detail-item ">
+            <div>Rajadas de vento</div>
+            <div>{{weather.wind_spd * 3.6 | number }}Km/h</div>
+        </div>
+
+        <div class="detail-item ">
+            <div>Humidade</div>
+            <div>{{weather.rh}} %</div>
+        </div>
+        <div class="detail-item">
+            <div>Ponto de Orvalho</div>
+            <div>{{weather.dewpt}}ºC</div>
+        </div>
+        <div class="detail-item">
+            <div>Precipitação</div>
+            <div>{{weather.rh}} mm/h</div>
+        </div>
+        <div class="detail-item">
+            <div>Cobertura de nuvens</div>
+            <div>{{weather.clouds}}%</div>
+        </div>
+        <div class="detail-item">
+            <div>Visibilidade</div>
+            <div>{{weather.vis}}</div>
+        </div>
+    </div>
+    
+</div>
+

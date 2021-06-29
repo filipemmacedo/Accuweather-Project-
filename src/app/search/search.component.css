@@ -1,0 +1,18 @@
+
+.search input {
+  height: 50px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px black;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  text-indent: 60px;
+  width: 80vw;
+}
+
+.icon {
+  position: absolute;
+  color: gray;
+  font-size: 25px;
+  margin: 6px 6px;
+}

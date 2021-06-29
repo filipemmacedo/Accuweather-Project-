@@ -1,0 +1,31 @@
+.current{
+  width: 80vw;
+}
+
+.icon > img {
+  width: 27px;
+}
+.current a{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.4rem;
+    height: 2rem;
+    background-color: rgba(34, 34, 34, 0.7);
+    padding: 5px;
+  }
+    .current > a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(202, 202, 202, 0.945);
+  }
+  
+  .location {
+    margin-right: 90px;
+  } 
+
+
+  @media only screen and (min-width: 600px) {
+    .current{
+      max-width: 300px;
+    }
+  }
