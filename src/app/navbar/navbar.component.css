@@ -1,7 +1,7 @@
 .nav-bar {
   display: flex;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   padding: 1em;
   justify-content: space-between;
   background: -moz-linear-gradient(

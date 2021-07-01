@@ -17,8 +17,8 @@ export class WeatherService {
     return this.daily.get(`https://api.weatherbit.io/v2.0/forecast/daily?city=${city}&country=${country}&days=15&key=013bdb10ad584af59d0ea654c3f85710`)
   }
 
-  getHourly(city: string, country:string) {
-    return this.hourly.get(`https://api.weatherbit.io/v2.0/forecast/hourly?city=${city}&country=${country}&hourly&key=013bdb10ad584af59d0ea654c3f85710&hours=24`)
+  getMinutely(city: string, country:string) {
+    return this.hourly.get(`https://api.weatherbit.io/v2.0/forecast/minutely?city=${city}&country=${country}&key=013bdb10ad584af59d0ea654c3f85710`)
   }
   
 }

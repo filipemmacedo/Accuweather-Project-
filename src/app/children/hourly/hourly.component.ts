@@ -23,7 +23,7 @@ export class HourlyComponent implements OnInit {
     this._geoLocation.getCity().subscribe((data: any) => {
       this.geoLocation = data;
       this._weather
-          .getHourly(this.geoLocation.city, this.geoLocation.country)
+          .getMinutely(this.geoLocation.city, this.geoLocation.country)
           .subscribe((data: any) => {
             this.weather = data['data'];            
       });

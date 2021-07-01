@@ -1,7 +1,7 @@
 .global-container{
   display: block;
   width: 100vw;
-  transform: translateY(-45px);
+  /* transform: translateY(-45px); */
 }
 
 .card-container {

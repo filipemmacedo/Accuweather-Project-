@@ -1,6 +1,8 @@
 .sub-links{
   display: flex;
   border-bottom: 1px solid lightgrey;
+  position: relative;
+  z-index: 3;
 }
 
 .sub-links>a{

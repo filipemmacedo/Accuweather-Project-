@@ -1,7 +1,7 @@
 .daily-container {
   display: flex;
   width: 100vw;
-  transform: translateY(-80px);
+  /* transform: translateY(-80px); */
 }
 
 .daily-card {

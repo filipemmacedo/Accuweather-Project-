@@ -1,18 +1,14 @@
-
-    <app-header></app-header>
-
-
 <div class='hourly-container'>
     <ul class="hourly-card">
-        <li class="infos-card" *ngFor="let hourly of weather">
+        <li class="infos-card" *ngFor="let minutely of weather">
             <section class='hourly'>
-                <li class="date"> {{ hourly.timestamp_local| date:'hh'}} hs
-                    <span> {{ hourly.timestamp_local | date: 'dd/MM'}}</span> </li>
-                <li><img src="https://www.weatherbit.io/static/img/icons/{{hourly.weather.icon}}.png"></li>
-                <li class="temp">{{hourly.app_temp}}º </li>
-                <li class="real-feel">RealFeelº{{hourly.temp}}</li>
-                <li class="descript">{{hourly.weather.description}}</li>
-                <li><i class="fas fa-tint"> </i> &nbsp; {{ hourly.rh}} %</li>
+                <li class="date"> {{ minutely.timestamp_local| date:'HH:mm'}}
+                    <span> {{ minutely.timestamp_local | date: 'dd/MM'}}</span> </li>
+                <!-- <li><img src="https://www.weatherbit.io/static/img/icons/{{minutely.weather.icon}}.png"></li> -->
+                <li class="temp">{{minutely.temp}}º </li>
+                <!-- <li class="real-feel">RealFeelº{{hourly.temp}}</li> -->
+                <!-- <li class="descript">{{hourly.weather.description}}</li> -->
+                <!-- <li><i class="fas fa-tint"> </i> &nbsp; {{ hourly.rh}} %</li> -->
                 </section>
         </li>
    </ul>
