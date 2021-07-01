@@ -17,15 +17,15 @@ const routes: Routes = [
     component: DetailComponent,
     children: [
       {
-        path: ':now',
+        path: 'now',
         component: NowComponent,
       },
       {
-        path: ':hourly',
+        path: 'hourly',
         component: HourlyComponent,
       },
       {
-        path: ':daily',
+        path: 'daily',
         component: DailyComponent,
       },
     ]

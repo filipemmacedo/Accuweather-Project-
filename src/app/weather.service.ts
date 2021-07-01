@@ -6,8 +6,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class WeatherService {
-  city: string = '';
-  country: string = '';
 
   constructor(private weather: HttpClient , private daily: HttpClient, private hourly: HttpClient) { }
 

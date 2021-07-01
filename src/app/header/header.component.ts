@@ -8,9 +8,15 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  currentWeather: any;
+
   constructor(public router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onChangeWeather(value: any): void {
+    this.currentWeather = value;
   }
 
 }

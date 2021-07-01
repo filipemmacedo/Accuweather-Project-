@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "projeto-weather2"
+  "defaultProject": "projeto-weather2",
+  "cli": {
+    "analytics": "e00efe19-2006-4b74-9b7c-b758b542cbf7"
+  }
 }

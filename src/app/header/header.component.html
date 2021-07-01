@@ -3,9 +3,7 @@
 
 <div class="container">
   <div class="wrapper">
-    <app-search></app-search>
-    <app-current></app-current>
+    <app-search (changeWeather)="onChangeWeather($event)"></app-search>
+    <app-current *ngIf="currentWeather" [data]="currentWeather"></app-current>
   </div>
 </div>
-
-

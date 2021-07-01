@@ -1,14 +1,7 @@
-
-<div class="current">
-
-    <a routerLink="/detail/now">
-      <span class="location">
-        {{ geoLocation.city }}, {{ weather.country_code }}
-      </span>
-    <div class="icon" >
-      <img src='{{ iconImg }}'>
-    </div>
-      <span class="temp">{{ weather.temp }}ºC</span>
-    </a>
-
-  </div>
+<a routerLink="/detail/now">
+  <span class="location">
+    {{ data.city_name }}, {{ data.country_code }}
+  </span>
+  <img src="https://www.weatherbit.io/static/img/icons/{{data.weather.icon}}.png" alt="">
+  <span class="temp">{{ data.temp }}ºC</span>
+</a>
