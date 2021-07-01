@@ -1,19 +1,13 @@
-
-<div class="search">
+<form class="form-search" method="GET">
   <div class="icon">
     <i class="fa fa-search icon"></i>
   </div>
-  
-    <form class="form-search" method="GET">
-      <!-- <input name="search" type="search" class="search-box" [(ngModel)]="value" placeholder="Procurar local,código postal..." list="cities"/>
-      <datalist id="cities">
-        <option *ngFor="let city of cities" value="{{city.name}}">
-      </datalist> -->
-      <select title="select city" name="city" class="search-box" [(ngModel)]="value" (change)="onChange()">
-        <option *ngFor="let city of cities" [ngValue]="city">{{city.name}}</option>
-      </select>
-    </form>
-  
-</div>
-
-<!-- <app-current *ngIf="currentWeather" [data]="currentWeather"></app-current> -->
+  <select 
+    title="select city" 
+    name="city" 
+    class="search-box" 
+    [(ngModel)]="value" 
+    (change)="onChange()">
+      <option *ngFor="let city of cities" [ngValue]="city">{{city.name}}</option>
+  </select>
+</form>

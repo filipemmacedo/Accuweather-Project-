@@ -8,22 +8,16 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  isOpen: boolean = false;
+
   constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
 
   viewMenu(){
-    const navBar = document.querySelector('.nav-bar') as HTMLElement;
-    const navRoutes = document.querySelector('.navbar-links') as HTMLElement;
-    const fecha = document.querySelector('.fecha') as HTMLElement;
-    const menu = document.querySelector('.menu') as HTMLElement;
-    
-
-    navBar.classList.toggle('active');
-    navRoutes.classList.toggle('active');
-    fecha.classList.toggle('active');
-    menu.classList.toggle('active');
+    this.isOpen = !this.isOpen;
+    console.log(this.isOpen);
   }
   
 }

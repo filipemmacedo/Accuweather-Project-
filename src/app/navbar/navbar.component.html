@@ -1,63 +1,17 @@
-<nav class="nav-bar">
-
+<div class="container"> 
   <div class="logo-wrapper">
     <a routerLink="/">
-    <img src="assets/img/accuweather.svg" alt="AccuWeather" />
-  </a>
+      <img src="assets/img/accuweather.svg" alt="AccuWeather" />
+    </a>
   </div>
-
-  <div class="navbar-links">
-    <ul class="rowbar">
-      <li class="list-item"><a class="links" href="#">Radar e Mapas</a><i class="fas fa-chevron-down"></i></li>
-      <li class="list-item"><a href="#">Vídeo</a><i class="fas fa-chevron-down"></i></li>
-      <li class="list-item"><a href="#">Mau Tempo</a><i class="fas fa-chevron-down"></i></li>
-      <li class="list-item"><a href="#">Previsões Personalizadas</a><i class="fas fa-chevron-down"></i></li>
-      <li class="list-item"><a href="#">Definições</a><i class="fas fa-chevron-down"></i></li>
-    </ul>
-
-    <div class="settings">
-      <i class="fas fa-cog"></i>
-    </div>
-    
-  </div>
-
-  <button class="toggleBtn" (click)="viewMenu()">
+  
+  <button 
+    type="button" 
+    title="Toggle Menu" 
+    class="toggle-btn" 
+    [class.open]="isOpen"
+    (click)="viewMenu()">
     <i class="menu fas fa-bars"></i>
     <i class="fecha fas fa-times"></i>
   </button>
- </nav>
-
- <!-- NavBar para páginas secundarias-->
-
- <ng-container *ngIf="router.routerState.snapshot.url !== '/'">
-  <nav class="nav-bar-mobile">
-
-    <div class="logo-wrapper">
-      <a routerLink="/">
-        <img src="assets/img/accuweather.svg" alt="AccuWeather" />
-      </a>
-    </div>
-  
-    <div class="navbar-links">
-      <ul class="rowbar">
-        <li class="list-item"><a href="#">Radar e Mapas</a></li>
-        <li class="list-item"><a href="#">Vídeo</a></li>
-        <li class="list-item"><a href="#">Mau Tempo</a></li>
-        <li class="list-item"><a href="#">Previsões Personalizadas</a></li>
-        <li class="list-item"><a href="#">Definições</a></li>
-      </ul>
-  
-      <div class="settings">
-        <i class="fas fa-cog"></i>
-      </div>
-      
-    </div>
-  
-    <button class="toggleBtn" (click)="viewMenu()">
-      <!--<i class="fa fa-search icon"></i>-->
-      <i class="menu fas fa-bars"></i>
-      <i class="fecha fas fa-times"></i>
-    </button>
-   </nav>
-  
-</ng-container>
+</div>
