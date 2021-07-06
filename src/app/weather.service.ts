@@ -20,5 +20,9 @@ export class WeatherService {
   getMinutely(city: string, country:string) {
     return this.hourly.get(`https://api.weatherbit.io/v2.0/forecast/minutely?city=${city}&country=${country}&key=013bdb10ad584af59d0ea654c3f85710`)
   }
+
+  getHourly(lat: number, lon: number) {
+    return this.hourly.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,daily,alerts&appid=9aaea19f07fb7197df88f0d2788dba32&units=metric`);
+  }
   
 }

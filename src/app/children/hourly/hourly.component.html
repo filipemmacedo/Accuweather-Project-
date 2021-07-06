@@ -1,15 +1,15 @@
-<div class='hourly-container'>
-    <ul class="hourly-card">
-        <li class="infos-card" *ngFor="let minutely of weather">
-            <section class='hourly'>
-                <li class="date"> {{ minutely.timestamp_local| date:'HH:mm'}}
-                    <span> {{ minutely.timestamp_local | date: 'dd/MM'}}</span> </li>
-                <!-- <li><img src="https://www.weatherbit.io/static/img/icons/{{minutely.weather.icon}}.png"></li> -->
-                <li class="temp">{{minutely.temp}}º </li>
-                <!-- <li class="real-feel">RealFeelº{{hourly.temp}}</li> -->
-                <!-- <li class="descript">{{hourly.weather.description}}</li> -->
-                <!-- <li><i class="fas fa-tint"> </i> &nbsp; {{ hourly.rh}} %</li> -->
-                </section>
-        </li>
-   </ul>
+<div class='container'>
+    <div class='hourly' *ngFor="let hourly of weather">
+        <div class="date"> 
+            {{ hourly.hour| date:'HH'}} hs
+            <span>{{ hourly.hour | date: 'dd/MM'}}</span>
+        </div>
+        <div>
+            <img src="http://openweathermap.org/img/w/{{hourly.weather[0].icon}}.png" alt="">
+        </div>
+        <div class="temp">{{hourly.temp}}º</div>
+        <div class="real-feel">RealFeel {{hourly.feels_like}}º</div>
+        <div class="descript">{{hourly.weather[0].description}}</div>
+        <div><i class="fas fa-tint"></i> {{ hourly.humidity}}%</div>
+    </div>
 </div>

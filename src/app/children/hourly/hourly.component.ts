@@ -12,7 +12,6 @@ export class HourlyComponent implements OnInit {
   weather: any = [];
   iconImg: string = '';
   
-
   constructor(
     private _weather: WeatherService,
     private _geoLocation: LocationService
@@ -22,10 +21,21 @@ export class HourlyComponent implements OnInit {
   ngOnInit(): void {
     this._geoLocation.getCity().subscribe((data: any) => {
       this.geoLocation = data;
-      this._weather
+      /* this._weather
           .getMinutely(this.geoLocation.city, this.geoLocation.country)
           .subscribe((data: any) => {
-            this.weather = data['data'];            
+            this.weather = data['data'];
+      }); */
+      this._weather
+        .getHourly(this.geoLocation.lat, this.geoLocation.lon)
+        .subscribe((result: any) => {
+          let data = result.hourly;
+          for(let i = 0; i < data.length; i++) {
+            let nextDate = new Date();
+            nextDate.setHours(nextDate.getHours() + i);
+            data[i].hour = nextDate;
+          }
+          this.weather = data;
       });
     });
   }

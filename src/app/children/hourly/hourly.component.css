@@ -1,63 +1,41 @@
-.hourly-container {
-  display: flex;
-  width: 100vw;
-  /* transform: translateY(-80px); */
-}
-    
-.hourly-card {
-  display: block;
-  width: 100%;
-  padding: 0px 12px 0;
-  
-}
-    
-.infos-card {
-  max-width: 900px;
-  background-color: white;
-  border-top: 1px solid whitesmoke;
-  border-left: 2px solid orangered;
-  margin: 10px auto;
-  height: auto;
-  list-style: none;
-}
-    
 .hourly {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto;
   padding: 10px;
+  background-color: white;
+  border-top: 1px solid whitesmoke;
+  border-left: 2px solid orangered;
+  margin: 10px auto;
 }
-  
-.date>span{
+
+.hourly > * {
+  flex: 1;
+}
+
+.date {
   display: flex;
   flex-direction: column;
+}
+  
+.date span {
   color: lightgray;
 }
     
-.hourly li img {
-  height: 50px;
+img {
   width: 50px;
+  height: auto;
 }
 
-.temp{
+.temp {
   font-size: 24px;
 }
 
-.real-feel{
+.real-feel {
   font: 12px;
 }
   
 .fa-tint {
   color: lightgray;
-}
-  
-@media only screen and (max-width: 600px) {
-  .descript{
-    display: none;
-  }
-
-  .real-feel{
-    display: none;
-  }
 }

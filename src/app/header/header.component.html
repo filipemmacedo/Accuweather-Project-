@@ -1,7 +1,5 @@
 
-<app-navbar></app-navbar>
-
-<div class="wrapper">
+<div class="wrapper" [style.background-image]="'url(' + currentBackground + ')'">
   <div class="container">
     <app-search (changeWeather)="onChangeWeather($event)"></app-search>
     <app-current *ngIf="currentWeather" [data]="currentWeather"></app-current>

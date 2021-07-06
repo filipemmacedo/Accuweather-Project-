@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  background: url(https://www.accuweather.com/images/hero/3/1440x450.jpg) no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;

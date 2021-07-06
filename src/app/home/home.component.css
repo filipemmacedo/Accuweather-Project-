@@ -7,12 +7,12 @@
   padding: 1em;
 }
 
-.title{
+.title {
   text-transform: uppercase;
   font-size: 1.5em;
 }
 
-.map{
+.map {
   width: 100%;
   padding-top: 56.25%;
   position: relative;
@@ -26,9 +26,22 @@
   height: 100%;
 }
 
-.link{
+.link {
   text-transform: uppercase;
   color: hsl(27, 100%, 50%);
   display: inline-block;
-  margin: 1em 0;
+  margin: 1em 0 0;
+  text-decoration: none;
+}
+
+app-navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
