@@ -1,22 +1,13 @@
-.global-container{
-  display: block;
-  width: 100vw;
-  /* transform: translateY(-45px); */
-}
-
 .card-container {
-  max-width: 900px;
-  margin: -60px auto auto auto;
-  padding: 20px 15px;
+  padding: 20px 0;
 }
   
 .card {
-  margin-top:60px;
+  margin-top: 30px;
   display: block;
   border-radius: 5px;
   width: 100%;
   padding: 20px 20px;
-  height: 200px;
   background-color: white;
   border-radius: 5px;
 }
@@ -36,11 +27,17 @@
 .corpo {
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+.corpo h3 {
+  margin: 0;
+  font-size: 2em;
+}
   
-.corpo >img {
+.corpo img {
   height:auto;
   width:auto;
 }
@@ -55,7 +52,7 @@
 }
 
 .sub{
-  font-size: 1.5em;
+  font-size: 0.5em;
 }
 
 .realfeel{
@@ -69,9 +66,7 @@
 }
  
 .info-container{
-  max-width:900px;
   display: block;
-  margin: auto;
 }
 
 .detail-item{
@@ -79,8 +74,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  max-width: 900px;
-  margin: 10px;
   padding:10px;
   border-top: 1px solid whitesmoke;
   border-left: 2px solid orangered;
