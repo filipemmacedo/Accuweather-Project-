@@ -36,6 +36,30 @@ export class SearchComponent implements OnInit {
       name: 'Rome',
       country: 'it'
     },
+    {
+      name: 'Moscow',
+      country: 'ru'
+    },
+    {
+      name: 'New York',
+      country: 'us'
+    },
+    {
+      name: 'Rio de Janeiro',
+      country: 'br'
+    },
+    {
+      name: 'Cape Town',
+      country: 'za'
+    },
+    {
+      name: 'Sidney',
+      country: 'au'
+    },
+    {
+      name: 'Beijing',
+      country: 'cn'
+    },
   ];
 
   value: City = this.cities[0];

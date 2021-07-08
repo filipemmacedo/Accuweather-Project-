@@ -1,4 +1,4 @@
-<div class="global-container">
+<div *ngIf="weather" class="global-container">
     <div class='card-container'>
         <div class="card">
             <div class="card-header">
@@ -6,17 +6,17 @@
                 <p>{{ hoje | date:'shortTime'}}</p>
             </div>
             <div class="corpo">
-                <p></p>
-                <div class="icon" >
-                    <img class="state"src='{{ iconImg }}'>
+                <div class="icon" *ngIf="iconImg">
+                    <img class="state" [src]='iconImg' alt="">
                 </div>
-                <p class="temp">{{ weather.temp }}º </p> <sub class="sub">C</sub> 
+                <p class="temp">{{ weather.temp }}º</p> 
+                <sub class="sub">C</sub> 
             </div>
             <div class="realfeel">
-                <p >RealFeelº{{weather.app_temp}}</p>
+                <p>RealFeelº{{weather.app_temp}}</p>
             </div>
             <div class="card-bottom">
-                <p >{{description}}</p>
+                <p>{{description}}</p>
             </div>
         </div>
     </div>
@@ -56,3 +56,12 @@
     
 </div>
 
+<div *ngIf="errorMessage" class="global-container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header card-header--error">
+                {{errorMessage}}
+            </div>
+        </div>
+    </div>
+</div>

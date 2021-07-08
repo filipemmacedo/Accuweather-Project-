@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { WeatherService } from '../../weather.service';
 import { LocationService } from '../../location.service';
 
@@ -8,30 +9,47 @@ import { LocationService } from '../../location.service';
   styleUrls: ['./now.component.css']
 })
 export class NowComponent implements OnInit {
-  geoLocation: any = {};
-  weather: any = {};
-  iconImg: string = '';
+  errorMessage: string | null = null;
+  weather: any = null;
+  iconImg: string | null = null;
   description: any = '';
   hoje: any = new Date();
   
   constructor(
     private _weather: WeatherService,
-    private _geoLocation: LocationService
+    private _geoLocation: LocationService,
+    private _route: ActivatedRoute,
   ) {}
 
 
   ngOnInit(): void {
-    this._geoLocation.getCity().subscribe((data: any) => {
-      this.geoLocation = data;
-      this._weather
-          .getWeather(this.geoLocation.city, this.geoLocation.country)
-          .subscribe((data: any) => {
-            this.weather = data['data'][0];
-            let icon = data['data'][0].weather.icon;
-            this.iconImg = `https://www.weatherbit.io/static/img/icons/${icon}.png`;
-            let description = data['data'][0].weather.description
-            this.description = description            
-        });
-    });       
+    const country = this._route.snapshot.paramMap.get('country');
+    const city = this._route.snapshot.paramMap.get('city');
+
+    if(country && city) {
+      this.getWeather(country, city);
+    } else {
+      this._geoLocation.getCity().subscribe((data: any) => {
+        this.getWeather(data.country, data.city);
+      });     
+    }
+  }
+
+  getWeather(country: string, city: string): void {
+    this.errorMessage = null;
+    this.weather = null;
+
+    this._weather
+      .getWeather(city, country)
+      .subscribe((data: any) => {
+        if(data) {
+          this.weather = data['data'][0];
+          this.iconImg = `https://www.weatherbit.io/static/img/icons/${data['data'][0].weather.icon}.png`;
+          this.description = data['data'][0].weather.description;
+        } else {
+          this.errorMessage = 'No information available. Try again later...';
+        }
+                  
+    });
   }
 }

@@ -1,4 +1,4 @@
-<a routerLink="/detail/now">
+<a routerLink="/detail/now/{{data.country_code | lowercase}}/{{data.city_name | lowercase}}">
   <span class="location">
     {{ data.city_name }}, {{ data.country_code }}
   </span>

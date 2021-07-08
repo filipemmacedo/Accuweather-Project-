@@ -27,6 +27,12 @@
   justify-content: space-between;
 }
 
+.card-header--error {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .corpo {
   height: auto;
   display: flex;
