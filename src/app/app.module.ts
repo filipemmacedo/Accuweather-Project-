@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { CurrentComponent } from './current/current.component';
 import { SublinksComponent } from './sublinks/sublinks.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SublinksComponent } from './sublinks/sublinks.component';
     SearchComponent,
     CurrentComponent,
     SublinksComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,15 +21,5 @@
   align-items: center;
   width: 40px;
   height: 40px;
-}
-
-.fecha {
-  display: none;
-}
-
-.toggle-btn.open .menu {
-  display: none;
-}
-.toggle-btn.open .fecha {
-  display: block;
+  cursor: pointer;
 }

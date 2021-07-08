@@ -10,8 +10,8 @@
     title="Toggle Menu" 
     class="toggle-btn" 
     [class.open]="isOpen"
-    (click)="viewMenu()">
+    (click)="openMenu()">
     <i class="menu fas fa-bars"></i>
-    <i class="fecha fas fa-times"></i>
   </button>
 </div>
+<app-sidenav (closeMenu)="closeMenu()" [isOpen]="isOpen"></app-sidenav>

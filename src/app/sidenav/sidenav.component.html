@@ -1,0 +1,18 @@
+<div class="sidenav" [ngClass]="{'open': isOpen}">
+  <div class="sidenav-header">
+    <button class="sidenav-settings" type="button" title="Settings"><i class="fas fa-cog"></i> Settings</button>
+    <button (click)="onClose()" class="sidenav-close" type="button" title="Close"><i class="fecha fas fa-times"></i></button>
+  </div>
+  <nav class="sidenav-nav">
+    <ul>
+      <li class="sidenav-options" *ngFor="let item of info">
+        <span class="sidenav-title">{{item.category}}</span>
+        <ul class="sidenav-links">
+          <li *ngFor="let option of item.nav">
+            <a routerLink="{{option.url}}">{{option.label}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

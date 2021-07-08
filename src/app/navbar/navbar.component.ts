@@ -15,9 +15,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  viewMenu(){
-    this.isOpen = !this.isOpen;
-    console.log(this.isOpen);
+  openMenu(){
+    this.isOpen = true;
+  }
+
+  closeMenu() {
+    this.isOpen = false;
   }
   
 }
