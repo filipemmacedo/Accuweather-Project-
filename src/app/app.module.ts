@@ -16,6 +16,7 @@ import { NowComponent } from './children/now/now.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { CurrentComponent } from './current/current.component';
+import { SublinksComponent } from './sublinks/sublinks.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CurrentComponent } from './current/current.component';
     NavbarComponent,
     SearchComponent,
     CurrentComponent,
+    SublinksComponent,
   ],
   imports: [
     BrowserModule,

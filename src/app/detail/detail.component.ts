@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Sublink } from '../interfaces/sublink';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
+  sublinks: Sublink[] = [
+    {
+      url: 'now',
+      label: 'Now',
+    },
+    {
+      url: 'hourly',
+      label: 'Hourly',
+    },
+    {
+      url: 'daily',
+      label: 'Daily',
+    },
+  ];
   
   constructor() {}
 

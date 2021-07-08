@@ -1,10 +1,6 @@
 <app-navbar></app-navbar>
 
-<section class="sub-links">
-    <a routerLink='/detail/now'>AGORA</a>
-    <a routerLink='/detail/hourly'>A CADA HORA</a>
-    <a routerLink='/detail/daily'> DIÁRIA</a>
-</section>
+<app-sublinks [links]="sublinks"></app-sublinks>
 
 <router-outlet></router-outlet>
 
