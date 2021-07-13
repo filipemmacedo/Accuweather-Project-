@@ -11,14 +11,12 @@ p {
     padding:0;
 }
 .container {
-    margin: 1rem 0 0 1rem;
+    margin-top: calc(1em + 10px);
     background-color: #fff;
 }
 
 .topstories-options{
-    width: 320px;
     height: auto;
-    
 }
 
 .topstories-title{
