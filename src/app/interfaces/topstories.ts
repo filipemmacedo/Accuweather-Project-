@@ -5,4 +5,5 @@ export interface Topstories {
     time: string;
     image: string;
     videotime: string;
+    isVideo: boolean;
   }

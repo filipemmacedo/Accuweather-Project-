@@ -2,13 +2,22 @@
     <ul>
       
       <li class="topstories-options" *ngFor="let item of info">
-        <h2 class="topstories-title">{{item.category}}</h2>
+        <p class="topstories-title">{{item.category}}</p>
         <ul class="topstories-links">
           <li *ngFor="let option of item.links">
-            <a routerLink="{{option.url}}"><h3>{{option.label}}</h3><i class="fas fa-arrow-right"></i> </a>
+            <a class="boxes" routerLink="{{option.url}}" [ngClass]="{'video': option.isVideo}" >
+              <div class="text">
+              <p class="category">{{option.category}}</p>
+              <p class="text">{{option.label}}</p>
+              <p class="time">{{option.time}} <span class="videotime"> {{option.videotime}}</span></p>
+              
+              
+              </div>
+              <img src={{option.image}}>
+            </a>
           </li>
+          <a class="more-stories" routerLink="/">More Stories</a>
         </ul>
       </li>
     </ul>
-  
 </div>
