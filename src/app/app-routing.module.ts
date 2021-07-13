@@ -6,6 +6,7 @@ import { DetailComponent } from './detail/detail.component';
 import { NowComponent } from './children/now/now.component';
 import { HourlyComponent } from './children/hourly/hourly.component';
 import { DailyComponent } from './children/daily/daily.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,11 @@ const routes: Routes = [
         path: 'daily',
         component: DailyComponent,
       },
-    ]
+    ],
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent
   }
 ];
 
