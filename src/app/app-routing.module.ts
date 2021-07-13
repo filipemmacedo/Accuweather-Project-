@@ -29,11 +29,11 @@ const routes: Routes = [
         component: NowComponent,
       },
       {
-        path: 'hourly',
+        path: 'hourly/',
         component: HourlyComponent,
       },
       {
-        path: 'daily',
+        path: 'daily/',
         component: DailyComponent,
       },
     ]

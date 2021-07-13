@@ -18,6 +18,8 @@ import { SearchComponent } from './search/search.component';
 import { CurrentComponent } from './current/current.component';
 import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ListlinksComponent } from './listlinks/listlinks.component';
+import { TopstoriesComponent } from './topstories/topstories.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     CurrentComponent,
     SublinksComponent,
     SidenavComponent,
+    ListlinksComponent,
+    TopstoriesComponent,
   ],
   imports: [
     BrowserModule,
