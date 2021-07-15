@@ -9,7 +9,7 @@
               <div class="text">
               <p class="category">{{option.category}}</p>
               <p class="text">{{option.label}}</p>
-              <p class="time">{{option.time}} <span class="videotime"> {{option.videotime}}</span></p>
+              <p class="time">{{option.time}} <span  [ngClass]="{'videotime': option.isVideo}">{{option.videotime}}</span></p>
               
               
               </div>

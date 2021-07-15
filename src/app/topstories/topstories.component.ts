@@ -39,7 +39,7 @@ export class TopstoriesComponent implements OnInit {
           label: `How to prevent mosquitoes after a hurricane`,
           time: '3 days ago',
           videotime: '1:01',
-          image: 'https://cdn.jwplayer.com/v2/media/7Mo5aAEg/poster.jpg?w=104&h=58&crop=1'
+          image: '../../../assets/img/topstories/playbutton.png'
         },
         {
           url: '/',
