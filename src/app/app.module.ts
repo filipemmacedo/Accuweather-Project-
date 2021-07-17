@@ -20,6 +20,7 @@ import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ListlinksComponent } from './listlinks/listlinks.component';
 import { TopstoriesComponent } from './topstories/topstories.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { TopstoriesComponent } from './topstories/topstories.component';
     SidenavComponent,
     ListlinksComponent,
     TopstoriesComponent,
+    SitemapComponent,
   ],
   imports: [
     BrowserModule,

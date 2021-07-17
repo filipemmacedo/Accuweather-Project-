@@ -1,0 +1,14 @@
+<div class="container--sitemap">
+    <ul class="sitemap-categories">
+      <li class="sitemap-options" *ngFor="let item of info">
+        <p class="sitemap-title">{{item.category}}</p>
+        <ul class="sitemap-links">
+          <li *ngFor="let option of item.links">
+            <a class="boxes" routerLink="{{option.url}}">{{option.label}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+</div>
+
+
