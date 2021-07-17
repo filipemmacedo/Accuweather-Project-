@@ -1,0 +1,106 @@
+
+.podcast-hero {
+  background-image: url("https://www.accuweather.com/images/hero/podcast/home.jpg");
+  background-repeat: no-repeat;
+  background-position: 40%;
+  background-size: cover;
+  height: 460px;
+  width: 100%;
+}
+
+.podcast-title {
+  position: relative;
+  width:fit-content;
+  top:40%;
+  left:15%;
+  display: block;
+  font-size: 80px;
+  line-height: 1.03;
+  font-weight: 400;
+  color: #fff;
+}
+
+.podcast-subtitle {
+  position: relative;
+  top:40%;
+  left:15%;
+  display: block;
+  max-width: 400px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.podcast-subtitle p{
+  font-weight: 200;
+}
+
+.podcast-container{
+  background-color: #fff;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.podcasts-list{
+  margin: 1em auto;
+}
+.podcasts-list p:first-child{
+  color:hsl(27, 100%, 50%);
+  font-size: 1.3rem;
+  margin: 1.5em 2.5em;
+}
+
+.podcasts-list p:nth-child(2){
+  font-size: 3.5em;
+  margin: 1.5em 1em;
+}
+
+.card{
+  display: inline-block;
+  max-width: 360px;
+  margin-bottom: 10em;
+}
+
+.card-img-top{
+  max-width: 360px;
+}
+
+.card-body{
+  margin: 1em ;
+}
+.card-text, a{
+  text-decoration: none;
+  color: hsl(27, 100%, 50%);
+}
+
+
+@media only screen and (max-width: 575px) {
+  .podcast-title {
+    top:40%;
+    left:10%;
+    font-size: 50px;
+    left: 10%;
+  }
+
+  .podcast-subtitle {
+    max-width: 290px;
+    font-size: 1em;
+    left: 10%;
+  }
+
+  .podcasts-list p:nth-child(2){
+    font-size: 2.5em;
+    margin: 1.5em 1em;
+  }
+  .card{
+    display: inline-block;
+    max-width: 320px;
+    margin-bottom: 10em;
+  }
+
+  .card-img-top{
+    max-width: 320px;
+  }
+}

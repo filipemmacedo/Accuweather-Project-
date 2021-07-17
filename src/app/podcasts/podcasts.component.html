@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="podcast-hero">
+  <div class="podcast-title">
+    <p>AccuWeather</p>
+    <p>Podcasts</p>
+  </div>
+  <div class="podcast-subtitle">
+    <p>
+      Our Podcasts provide behind-the-scenes details on trending weather topics.
+    </p>
+  </div>
+</div>
+
+<div class="podcast-container">
+
+  <div class="podcasts-list">
+    <p> Listen </p>
+    <p> Our Podcasts </p>
+    <div class="card-group">
+      <div class="card" *ngFor="let podcast of podcasts">
+        <img class="card-img-top"  src="{{podcast.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">{{podcast.title}}</h2>
+          <h3 class="card-description">{{podcast.description}}</h3>
+          <p class="card-text"><a routerLink="/podcasts">{{podcast.link}} <i class="fas fa-long-arrow-alt-right"></i></a></p>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
