@@ -18,8 +18,11 @@ import { SearchComponent } from './search/search.component';
 import { CurrentComponent } from './current/current.component';
 import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ListlinksComponent } from './listlinks/listlinks.component';
+import { TopstoriesComponent } from './topstories/topstories.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
 import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import { SidebarArticleComponent } from './sidebar-article/sidebar-article.compo
     CurrentComponent,
     SublinksComponent,
     SidenavComponent,
+    ListlinksComponent,
+    TopstoriesComponent,
     PodcastsComponent,
     SidebarArticleComponent,
   ],

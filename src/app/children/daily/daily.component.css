@@ -1,6 +1,6 @@
 .daily-container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   /* transform: translateY(-80px); */
 }
 
