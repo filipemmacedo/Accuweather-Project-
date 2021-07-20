@@ -18,6 +18,7 @@ import { SearchComponent } from './search/search.component';
 import { CurrentComponent } from './current/current.component';
 import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
 import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SidebarArticleComponent } from './sidebar-article/sidebar-article.compo
     CurrentComponent,
     SublinksComponent,
     SidenavComponent,
+    PodcastsComponent,
     SidebarArticleComponent,
   ],
   imports: [
