@@ -16,24 +16,36 @@ export class SettingsComponent implements OnInit {
       country: 'US',
     },
     {
-      type: 'English',
-      country: 'UK',
+      type: 'Español',
+      country: 'ES',
     },
     {
       type: 'Português',
       country: 'PT',
     },
     {
+      type: 'Français',
+      country: 'FR',
+    },
+    {
+      type: 'English',
+      country: 'UK',
+    },
+    {
       type: 'Português',
       country: 'BR',
     },
     {
-      type: 'Espanõl',
-      country: 'ES',
+      type: 'Dansk',
+      country: 'DN',
     },
     {
-      type: 'Français',
-      country: 'FR',
+      type: 'Netherlands',
+      country: 'NL',
+    },
+    {
+      type: 'Italiano',
+      country: 'IT',
     },
   ];
 

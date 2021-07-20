@@ -49,5 +49,6 @@ select{
   cursor: pointer;
   position: relative;
   padding-right: 1rem;
+  background-color: #fff;
 }
 
