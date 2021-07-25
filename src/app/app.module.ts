@@ -23,7 +23,6 @@ import { TopstoriesComponent } from './topstories/topstories.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
 import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { VideosComponent } from './videos/videos.component';
 
 
 @NgModule({
@@ -46,7 +45,6 @@ import { VideosComponent } from './videos/videos.component';
     PodcastsComponent,
     SidebarArticleComponent,
     CategoriesComponent,
-    VideosComponent,
   ],
   imports: [
     BrowserModule,
