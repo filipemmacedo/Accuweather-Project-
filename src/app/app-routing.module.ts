@@ -7,6 +7,7 @@ import { NowComponent } from './children/now/now.component';
 import { HourlyComponent } from './children/hourly/hourly.component';
 import { DailyComponent } from './children/daily/daily.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
+import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'podcasts',
     component: PodcastsComponent,
+  },
+  {
+    path: 'videos',
+    component: VideosComponent,
   },
 ];
 
