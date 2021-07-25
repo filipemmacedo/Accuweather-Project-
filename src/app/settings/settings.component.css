@@ -1,7 +1,8 @@
 .card-container {
-  max-width: 75%;
-  margin: 0 auto 15px;
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+  max-width: 90%;
+  width: 632px;
+  margin: 0 auto ;
+
 }
 
 .card {
@@ -13,7 +14,6 @@
   background-color: white;
   border-radius: 5px;
   margin: 0;
-  max-width:632px;
 }
 
 .card-header, h2 {
@@ -29,12 +29,14 @@
   align-items: center;
   border-bottom: 2px solid hsla(0,0%,76.1%,.2);
   margin-bottom: 1rem;
+  padding-bottom: .5rem;
 }
-.card-box-special{
+.card-box:nth-last-child(1){
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: none;
 }
 h3{
@@ -48,7 +50,12 @@ select{
   border: none;
   cursor: pointer;
   position: relative;
-  padding-right: 1rem;
+  padding-right: .5rem;
   background-color: #fff;
+}
+
+.fa-chevron-down{
+  position: relative;
+  right: .5em;
 }
 

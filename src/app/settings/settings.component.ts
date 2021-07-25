@@ -58,7 +58,7 @@ export class SettingsComponent implements OnInit {
     },
     {
       definition: 'Imperial',
-      unity: '(ºF, Mph,In)',
+      unity: '(ºF,Mph,In)',
     },
   ];
   valueM: Metric = this.metrics[0];
