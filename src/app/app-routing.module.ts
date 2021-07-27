@@ -7,6 +7,8 @@ import { NowComponent } from './children/now/now.component';
 import { HourlyComponent } from './children/hourly/hourly.component';
 import { DailyComponent } from './children/daily/daily.component';
 import { SettingsComponent } from './settings/settings.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   {
@@ -41,8 +43,16 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    component: SettingsComponent
-  }
+    component: SettingsComponent,
+  },
+  {
+    path: 'podcasts',
+    component: PodcastsComponent,
+  },
+  {
+    path: 'news',
+    component: NewsComponent,
+  },
 ];
 
 @NgModule({

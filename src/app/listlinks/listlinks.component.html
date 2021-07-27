@@ -1,0 +1,14 @@
+<div class="listlinks">
+      <ul>
+        
+        <li class="listlinks-options" *ngFor="let item of info">
+          <h2 class="listlinks-title">{{item.category}}</h2>
+          <ul class="listlinks-links">
+            <li *ngFor="let option of item.links">
+              <a routerLink="{{option.url}}"><h3>{{option.label}}</h3><i class="fas fa-arrow-right"></i> </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    
+  </div>

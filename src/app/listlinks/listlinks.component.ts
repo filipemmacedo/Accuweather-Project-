@@ -1,19 +1,16 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sidenav',
-  templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.css']
+  selector: 'app-listlinks',
+  templateUrl: './listlinks.component.html',
+  styleUrls: ['./listlinks.component.css']
 })
-export class SidenavComponent implements OnInit {
-
-  @Input() isOpen: boolean = false;
-  @Output() closeMenu = new EventEmitter<any>();
+export class ListlinksComponent implements OnInit {
 
   info = [
     {
-      category: 'Weather',
-      nav: [
+      category: 'Further Ahead',
+      links: [
         {
           url: '/detail/now',
           label: 'Now'
@@ -28,9 +25,9 @@ export class SidenavComponent implements OnInit {
         },
       ]
     },
-    {
-      category: 'Around the globe',
-      nav: [
+    
+    { category: 'Around the globe',
+       links: [
         {
           url: '/',
           label: 'Winter Center'
@@ -52,7 +49,7 @@ export class SidenavComponent implements OnInit {
           label: 'Video'
         },
         {
-          url: '/news',
+          url: '/',
           label: 'News'
         },
         {
@@ -66,10 +63,6 @@ export class SidenavComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onClose(): void {
-    this.closeMenu.emit();
   }
 
 }

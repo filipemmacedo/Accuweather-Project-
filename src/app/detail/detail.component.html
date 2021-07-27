@@ -1,8 +1,13 @@
 <app-navbar></app-navbar>
 
-<app-sublinks [links]="sublinks"></app-sublinks>
+<app-sublinks [links]="sublinks"></app-sublinks>    
 
-<router-outlet></router-outlet>
-
+<div class="container container--children">
+  
+  <router-outlet></router-outlet>
+  <app-topstories></app-topstories>
+        
+</div> 
+  
 
 

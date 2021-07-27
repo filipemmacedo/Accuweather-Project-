@@ -19,6 +19,12 @@ import { CurrentComponent } from './current/current.component';
 import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ListlinksComponent } from './listlinks/listlinks.component';
+import { TopstoriesComponent } from './topstories/topstories.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
+import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
+import { ListnewsComponent } from './listnews/listnews.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,12 @@ import { SettingsComponent } from './settings/settings.component';
     SublinksComponent,
     SidenavComponent,
     SettingsComponent,
+    ListlinksComponent,
+    TopstoriesComponent,
+    PodcastsComponent,
+    SidebarArticleComponent,
+    ListnewsComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

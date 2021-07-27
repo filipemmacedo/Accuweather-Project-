@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     'https://www.accuweather.com/images/hero/6/1440x450.jpg'
   ];
   currentBackground: string = '';
-
+  currentTime: any ='';
   constructor() { }
 
   ngOnInit(): void {
@@ -33,5 +33,7 @@ export class HeaderComponent implements OnInit {
     console.log(index);
     return this.backgroundImages[index];
   }
+
+
 
 }
