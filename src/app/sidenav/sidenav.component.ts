@@ -52,7 +52,7 @@ export class SidenavComponent implements OnInit {
           label: 'Video'
         },
         {
-          url: '/',
+          url: '/news',
           label: 'News'
         },
         {

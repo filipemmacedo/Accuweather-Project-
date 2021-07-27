@@ -8,6 +8,14 @@ import { Listnews } from '../interfaces/listnews';
 })
 export class ListnewsComponent implements OnInit {
 
+  highlighted: Listnews[] = [
+    {
+      url:'/',
+      label:'Tokyo Olympics could be one of the hottest games on record',
+      image: 'https://cdn.jwplayer.com/v2/media/9rPtxfTy/poster.jpg?w=348&h=260&crop=1',
+    },
+  ]
+
   info: Listnews[] = [
     {
       url: '/',
