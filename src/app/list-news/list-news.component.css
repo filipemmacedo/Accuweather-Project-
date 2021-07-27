@@ -1,0 +1,51 @@
+.container-news {
+  margin-top: 30px;
+}
+.container-news h2 {
+  text-transform: uppercase;
+}
+.weather-news {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.news-image {
+  width: 25%;
+  height: auto;
+}
+.news-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.news-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+  width: 75%;
+}
+.news-description div p {
+  text-transform: uppercase;
+}
+.news-description p:nth-child(1) {
+  padding-top: 20px;
+  margin: 0;
+  color: #ff7301;
+  font-weight: 600;
+}
+.news-description p:nth-child(2) {
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+  padding-right: 10px;
+}
+.news-description span {
+  font-size: 12px;
+  padding-bottom: 7px;
+  color: rgb(77, 77, 77);
+
+}

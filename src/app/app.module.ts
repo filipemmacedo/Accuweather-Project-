@@ -20,6 +20,7 @@ import { SublinksComponent } from './sublinks/sublinks.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
 import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
+import { ListNewsComponent } from './list-news/list-news.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SidebarArticleComponent } from './sidebar-article/sidebar-article.compo
     SidenavComponent,
     PodcastsComponent,
     SidebarArticleComponent,
+    ListNewsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div class="container-news">
+  <h2>Weather News</h2>
+  <div class="weather-news" *ngFor="let image of news">
+    <div class="news-image">
+      <img src="{{image.image}}">
+    </div>
+    <div class="news-description" *ngFor="let text of image.description">
+      <div>
+        <p>{{text.title}}</p>
+        <p>{{text.detail}}</p>
+      </div>
+      <span>{{text.date}}</span>
+    </div>
+  </div>
+</div>

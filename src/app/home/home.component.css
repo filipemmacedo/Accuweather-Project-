@@ -49,6 +49,7 @@ app-navbar {
     rgba(0, 0, 0, 0) 100%
   );
 }
+
 @media only screen and (max-width:900px) {
   .container-map{
     grid-template-columns: 100%;
