@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { WeatherService } from '../../weather.service';
 import { LocationService } from '../../location.service';
 
@@ -17,17 +16,15 @@ export class NowComponent implements OnInit {
   
   constructor(
     private _weather: WeatherService,
-    private _geoLocation: LocationService,
-    private _route: ActivatedRoute,
+    private _geoLocation: LocationService
   ) {}
 
 
   ngOnInit(): void {
-    const country = this._route.snapshot.paramMap.get('country');
-    const city = this._route.snapshot.paramMap.get('city');
+    const savedLocation = JSON.parse(localStorage.getItem('userSavedLocation') || '""');
 
-    if(country && city) {
-      this.getWeather(country, city);
+    if(savedLocation) {
+      this.getWeather(savedLocation.country, savedLocation.name);
     } else {
       this._geoLocation.getCity().subscribe((data: any) => {
         this.getWeather(data.country, data.city);

@@ -25,14 +25,6 @@ const routes: Routes = [
         component: NowComponent,
       },
       {
-        path: 'now/:country',
-        redirectTo: 'now',
-      },
-      {
-        path: 'now/:country/:city',
-        component: NowComponent,
-      },
-      {
         path: 'hourly',
         component: HourlyComponent,
       },

@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { City } from '../interfaces/city';
+import { LocationService } from './../location.service';
 import { WeatherService } from '../weather.service';
 @Component({
   selector: 'app-search',
@@ -9,7 +10,6 @@ import { WeatherService } from '../weather.service';
 export class SearchComponent implements OnInit {
 
   @Output() changeWeather = new EventEmitter<any>();
-  //currentWeather: any;
 
   cities: City[] = [
     { 
@@ -64,17 +64,41 @@ export class SearchComponent implements OnInit {
 
   value: City = this.cities[0];
 
-  constructor(private weatherService: WeatherService) { }
+  constructor(private weatherService: WeatherService, private locationService: LocationService) { }
 
   ngOnInit(): void {
-    this.onChange();
+    const savedLocation = JSON.parse(localStorage.getItem('userSavedLocation') || '""');
+
+    if(savedLocation) {
+      const index = this.cities.findIndex((city) => city.name === savedLocation.name );
+      if(index) {
+        this.value = this.cities[index];
+        this.onChange();
+      } else {
+        this.getCurrentLocation();
+      }
+    } else {
+      this.getCurrentLocation();
+    }
+  }
+
+  getCurrentLocation(): void {
+    this.locationService.getCity().subscribe((data: any) => {
+      if(data.status === 'success') { // TODO: check if city is already on the options list
+        this.cities.unshift({
+          name: data.city,
+          country: data.countryCode,
+        });
+        this.value = this.cities[0];
+      }
+
+      this.onChange();
+    });
   }
 
   onChange(): void {
+    localStorage.setItem('userSavedLocation', JSON.stringify(this.value));
     this.weatherService.getWeather(this.value.name, this.value.country).subscribe((response: any) => {
-      console.log(response.data[0]);
-      //this.currentWeather = response.data[0];
-
       this.changeWeather.emit(response.data[0]);
     });
   }
