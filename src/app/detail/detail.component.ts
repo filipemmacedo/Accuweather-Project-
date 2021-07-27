@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { Sublink } from '../interfaces/sublink';
 @Component({
   selector: 'app-detail',
@@ -24,5 +26,6 @@ export class DetailComponent implements OnInit {
   
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }
