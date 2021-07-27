@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <section class="highlights">
+    <div class="video-container">
+      <div class="video-highlight">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X2wQScEuBTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+      <div class="description">
+        <h1>AccuWeather's Hurricane Season 2021 Special</h1>
+        <span>JULY, 26, 2021</span>
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-sign-out-alt fa-rotate-270"></i>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, dolore explicabo similique ut quod sequi illum.</p>
+      </div>
+    </div>
+  </section>
+
+  <app-categories></app-categories>
+
+  <section class="video-grid">
+    <div class="video-list">
+      <div class="video" *ngFor="let videos of video">
+        <img class="card-img-top" [src]="videos.url" [alt]="videos.title">
+      </div>
+    </div>
+  </section>
+
+  <div class="see-more">
+    <div> See More <i class="fas fa-angle-down"></i></div>
+  </div>
+
+</div>
