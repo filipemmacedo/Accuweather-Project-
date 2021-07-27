@@ -1,0 +1,4 @@
+export interface Sitemap {
+  url: string;
+  label: string;
+}

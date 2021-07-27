@@ -1,0 +1,18 @@
+<div class="topstories">
+  <p class="topstories-title">Top Stories</p>
+  <ul class="topstories-links">
+    <li class="topstories-item" *ngFor="let option of info">
+      <a class="topstories-boxes" routerLink="{{option.url}}" [ngClass]="{'video': option.isVideo}" >
+        <div class="topstories-info">
+          <p *ngIf="option.category" class="topstories-category">{{option.category}}</p>
+          <p class="topstories-text">{{option.label}}</p>
+          <p class="topstories-time">{{option.time}} 
+            <span [ngClass]="{'videotime': option.isVideo}">{{option.videotime}}</span>
+          </p>
+        </div>
+        <img class="topstories-image" [src]="option.image" [alt]="option.label">
+      </a>
+    </li>
+  </ul>
+  <a class="more-stories" routerLink="/">More Stories</a>
+</div>

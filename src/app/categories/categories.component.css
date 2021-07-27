@@ -1,0 +1,32 @@
+.container{
+  overflow-x: hidden;
+}
+
+.categories ul{
+  background-color: #222;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.categories li {
+  margin-right: 20px;
+}
+
+.categories a {
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.categories a:active{
+  border-color: orangered;
+}

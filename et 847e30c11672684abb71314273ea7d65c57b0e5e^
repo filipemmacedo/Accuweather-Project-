@@ -1,0 +1,168 @@
+[33mcommit 8142564e9be16f04b1afa3456fb2c91d60349aff[m[33m ([m[1;36mHEAD -> [m[1;32mfeatured-category-list[m[33m)[m
+Author: Fernando-Ligabue <76406175+Fernando-Ligabue@users.noreply.github.com>
+Date:   Sun Jul 25 20:53:33 2021 +0100
+
+    Revert "feature categories"
+    
+    This reverts commit 07fdb7050ca2f50c465ca0bcdb6605210f30ffc8.
+
+[33mcommit 07fdb7050ca2f50c465ca0bcdb6605210f30ffc8[m[33m ([m[1;31morigin/featured-category-list[m[33m)[m
+Author: Fernando-Ligabue <76406175+Fernando-Ligabue@users.noreply.github.com>
+Date:   Sun Jul 25 20:47:26 2021 +0100
+
+    feature categories
+
+[33mcommit 847e30c11672684abb71314273ea7d65c57b0e5e[m
+Author: Fernando-Ligabue <76406175+Fernando-Ligabue@users.noreply.github.com>
+Date:   Sun Jul 25 20:42:44 2021 +0100
+
+    feature-categories
+
+[33mcommit 55c00092b3e19fe4252378d5013d65139734a224[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mroutes-with-params[m[33m, [m[1;32mmain[m[33m, [m[1;32mfeatured-videos[m[33m)[m
+Merge: 9e97f27 5c5ad0b
+Author: Nikolasrralonso <73649138+Nikolasrralonso@users.noreply.github.com>
+Date:   Tue Jul 20 20:26:14 2021 +0100
+
+    Merge pull request #3 from Fernando-Ligabue/feature-topstories
+    
+    Feature topstories
+
+[33mcommit 5c5ad0b557434ca7fd3cb930a44a4fa663375a17[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 20 20:24:12 2021 +0100
+
+    refactor: topstories component
+
+[33mcommit b3dfbc6aadd7f1ec86ff72adfd542515ac8940c8[m
+Author: nikolas-roman <nikolasrralonso@outlook.com>
+Date:   Tue Jul 20 19:57:43 2021 +0100
+
+    refactor datepipe
+
+[33mcommit d275b78da6b156f51bd74958975b001490d499f0[m
+Merge: c653521 9e97f27
+Author: Nikolasrralonso <73649138+Nikolasrralonso@users.noreply.github.com>
+Date:   Tue Jul 20 19:51:03 2021 +0100
+
+    Merge branch 'main' into feature-topstories
+
+[33mcommit 9e97f27ffba16f209f5fd2eb5f315a639c068740[m
+Merge: efc1017 53cfb21
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 20 19:43:22 2021 +0100
+
+    Merge pull request #2 from Fernando-Ligabue/feature-podcasts
+    
+    feat: podcasts page
+
+[33mcommit 53cfb214e1f49626e5fd6edda44c8639cc3d8661[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 20 19:42:01 2021 +0100
+
+    refactor: files updated
+
+[33mcommit 8abb5614e0ce2048f41d6c18dc06b35b205155d9[m
+Merge: 2747461 efc1017
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 20 19:07:20 2021 +0100
+
+    Merge branch 'main' into feature-podcasts
+
+[33mcommit 274746119cef632318c493fca6dccad6604e33b4[m[33m ([m[1;31morigin/feature-podcasts[m[33m, [m[1;32mfeature-podcasts[m[33m)[m
+Author: Fernando-Ligabue <76406175+Fernando-Ligabue@users.noreply.github.com>
+Date:   Sat Jul 17 19:17:20 2021 +0100
+
+    feature-podcasts
+
+[33mcommit c65352199856200be7e64c73d7c712d810cecc78[m[33m ([m[1;31morigin/feature-topstories[m[33m)[m
+Author: nikolas-roman <nikolasrralonso@outlook.com>
+Date:   Thu Jul 15 11:37:46 2021 +0100
+
+    Minor Changes Top Stories
+
+[33mcommit 4653e6f51ffb55dd00244bda367baedf6ab426c1[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 13 21:46:05 2021 +0100
+
+    fix router pages
+
+[33mcommit 248e65845a2cac3a6f2bda64a9bc643528e978e9[m
+Author: nikolas-roman <nikolasrralonso@outlook.com>
+Date:   Tue Jul 13 21:29:50 2021 +0100
+
+    Feature Topstories
+
+[33mcommit efc10170d36da7aa9d04e7de5f234c5ab452540a[m
+Merge: 9021a99 5143f30
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 13 21:18:34 2021 +0100
+
+    Merge pull request #1 from Fernando-Ligabue/sidebar-article
+    
+    sidebar article
+
+[33mcommit 5143f301b08d065ac0d7a4ab75d2a6cf76635a0f[m
+Author: filipemmacedo <filipemacedo55@gmail.com>
+Date:   Tue Jul 13 21:03:08 2021 +0100
+
+    sidebar article
+
+[33mcommit ff73b33c5137c44a1983e2c4115a57492969a764[m[33m ([m[1;31morigin/feature-listlinks[m[33m)[m
+Author: nikolas-roman <nikolasrralonso@outlook.com>
+Date:   Tue Jul 13 18:54:15 2021 +0100
+
+    Listlinks component
+
+[33mcommit 9021a99c4add24108fcb8a9946be47b791a26bab[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 8 21:30:32 2021 +0100
+
+    feat: sidenav component
+
+[33mcommit 3f8a5d4a2a8c3857f2becb1c544950af39388ee4[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 8 20:28:38 2021 +0100
+
+    style: update now presentation
+
+[33mcommit f750cae4e4f71c986ba701a084c06bf58ad3790a[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 8 20:06:00 2021 +0100
+
+    feat: sublinks component
+
+[33mcommit 319d276bb3e9671740937fd5afe09f003fca4489[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 8 19:40:27 2021 +0100
+
+    feat: now route with params
+
+[33mcommit 62ed350a4e1d11b8895af8ba7249aba8a8b2680b[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Tue Jul 6 21:30:35 2021 +0100
+
+    refactor: hourly page
+
+[33mcommit 64c8afcb9055f7230da883f97091d9c1915dd006[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 1 21:33:52 2021 +0100
+
+    refactor layout
+
+[33mcommit e3a7703d9ced7097a8c875b936e0e802058fa0cf[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 1 20:18:08 2021 +0100
+
+    refactor sub pages
+
+[33mcommit 0ca9876866ff27ee7d96767d1965fe4bf0b7bcdc[m
+Author: Nuno Pereira <nunorlp@gmail.com>
+Date:   Thu Jul 1 19:47:13 2021 +0100
+
+    refactor header component
+
+[33mcommit f2871dfcf6f1a41f75afdc5f061a1973f420d000[m
+Author: Fernando-Ligabue <76406175+Fernando-Ligabue@users.noreply.github.com>
+Date:   Tue Jun 29 19:14:15 2021 +0100
+
+    first commit

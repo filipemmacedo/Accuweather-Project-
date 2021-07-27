@@ -38,6 +38,10 @@
   height: auto;
   margin-right: 0.5em;
 }
+.sidenav-settings a{
+  text-decoration: none;
+  color: #222;
+}
 
 .sidenav-nav {
   margin-top: 2em;
@@ -74,3 +78,4 @@
   border-left-width: 2px;
   padding-left: 1em;
 }
+

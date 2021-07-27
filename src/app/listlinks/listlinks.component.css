@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* nao consegui manter tamanho */
+
+.listlinks {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 970px;
+    height: auto;
+    margin: auto;
+}
+
+h2 {
+    width:100%;
+    margin: 0;
+    padding-bottom: .3em;
+    line-height: 1em;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.946);
+}
+
+h3 {
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a {
+    display:flex;
+    justify-content:space-between;
+    padding: 1em 0;
+    margin:0;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.946);
+
+}
+
+
+.listlinks-title {
+    width: 100%;
+    font-size:1em;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+.listlinks a {
+    text-decoration: none;
+    color: #000;
+}
+
+.listlinks-links{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing:1px;
+}
+
+.listlinks ul {
+    margin-bottom: 2rem;
+}
+
