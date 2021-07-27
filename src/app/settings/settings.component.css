@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-.card-header, h2 {
+.card-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
