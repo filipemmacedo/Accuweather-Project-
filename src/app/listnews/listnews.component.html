@@ -1,0 +1,21 @@
+<section class="featured-topic-newsfeed">
+    <header class="newsfeed-header">
+        <h3>Business and Weather</h3>
+    </header>
+    <div class="newsfeed-body">
+        <a class ="featured-story-newsfeed" href="#">
+            <div class="img-featured-story" *ngFor="let highlight of highlighted">
+                <img src={{highlight.image}} alt="img">
+                <h4>{{highlight.label}}</h4>
+            </div>
+        </a>
+        <ul class="featured-stories-list">
+            <li class="featured-story-item" *ngFor="let option of info">
+            <a class="featured-story-link" routerLink="{{option.url}}">
+                <h4>{{option.label}}</h4>
+            </a>
+        </li>
+            <a class="featured-stories-seemore" href="/"> See More</a>
+        </ul>
+    </div>
+</section>

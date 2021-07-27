@@ -1,10 +1,14 @@
 .container-map{
   transform: translateY(-95px);
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 40px;
 }
 
 .wrapper {
   background-color: white;
   padding: 1em;
+  align-self: flex-start;
 }
 
 .title {
@@ -44,4 +48,9 @@ app-navbar {
     rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+@media only screen and (max-width:900px) {
+  .container-map{
+    grid-template-columns: 100%;
+  }
 }

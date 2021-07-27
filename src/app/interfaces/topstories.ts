@@ -4,6 +4,6 @@ export interface Topstories {
     label: string;
     time: string;
     image: string;
-    videotime: string;
-    isVideo: boolean;
+    videotime?: string;
+    isVideo?: boolean;
   }

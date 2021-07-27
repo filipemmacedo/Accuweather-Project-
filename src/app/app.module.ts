@@ -21,6 +21,11 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ListlinksComponent } from './listlinks/listlinks.component';
 import { TopstoriesComponent } from './topstories/topstories.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
+import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
+import { ListnewsComponent } from './listnews/listnews.component';
+import { NewsComponent } from './news/news.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +45,10 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     ListlinksComponent,
     TopstoriesComponent,
     SitemapComponent,
+    PodcastsComponent,
+    SidebarArticleComponent,
+    ListnewsComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
