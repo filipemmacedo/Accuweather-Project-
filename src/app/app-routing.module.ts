@@ -8,6 +8,7 @@ import { HourlyComponent } from './children/hourly/hourly.component';
 import { DailyComponent } from './children/daily/daily.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
+import { VideosComponent } from './videos/videos.component';
 import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'podcasts',
     component: PodcastsComponent,
+  },
+  {
+    path: 'videos',
+    component: VideosComponent,
   },
   {
     path: 'news',
