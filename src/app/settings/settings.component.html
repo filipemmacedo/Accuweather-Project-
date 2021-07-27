@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<div class='card-container'>
+  <div class="card">
+    <div class="card-header">
+      <h2>Definições</h2>
+    </div>
+    <div class="card-box">
+      <h3>Idioma</h3>
+      <div class="infos">
+        <select
+        title="select language"
+        name="language"
+        class="language"
+        [(ngModel)]="value">
+          <option *ngFor="let language of languages" [ngValue]="language">{{language.type}},{{language.country}}</option>
+        </select>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="card-box">
+      <h3>Unidades</h3>
+      <div class="infos">
+        <select
+        title="metric"
+        name="metric"
+        class="metric"
+        [(ngModel)]="valueM">
+        <option *ngFor="let metric of metrics" [ngValue]="metric">{{metric.definition}},{{metric.unity}}</option>
+      </select>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="card-box">
+      <h3>Estilo de Mapas</h3>
+      <div class="infos-special">
+        <select title="mapStyles"
+        name="mapStyles"
+        class="mapStyles"
+        [(ngModel)]="valueS">
+        <option *ngFor="let mapStyle of mapStyles" [ngValue]="mapStyle">{{mapStyle.style}}</option>
+      </select>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+</div>
