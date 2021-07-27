@@ -24,6 +24,7 @@ import { TopstoriesComponent } from './topstories/topstories.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { PodcastsComponent } from './podcasts/podcasts.component';
 import { SidebarArticleComponent } from './sidebar-article/sidebar-article.component';
+import { ListNewsComponent } from './list-news/list-news.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { VideosComponent } from './videos/videos.component';
 import { ListnewsComponent } from './listnews/listnews.component';
@@ -50,6 +51,7 @@ import { NewsComponent } from './news/news.component';
     SitemapComponent,
     PodcastsComponent,
     SidebarArticleComponent,
+    ListNewsComponent,
     CategoriesComponent,
     VideosComponent,
     ListnewsComponent,
