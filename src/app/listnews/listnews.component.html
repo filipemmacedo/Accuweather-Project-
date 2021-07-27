@@ -1,21 +1,21 @@
-<div class="featured-topic-newsfeed">
+<section class="featured-topic-newsfeed">
     <header class="newsfeed-header">
         <h3>Business and Weather</h3>
     </header>
-    <section class="newsfeed-body">
+    <div class="newsfeed-body">
         <a class ="featured-story-newsfeed" href="#">
-            <div class="img-featured-story">
-                <img src="https://cdn.jwplayer.com/v2/media/9rPtxfTy/poster.jpg?w=348&h=260&crop=1" alt="img">
-                <h4>Tokyo Olympics could be one of the hottest games on record</h4>
+            <div class="img-featured-story" *ngFor="let highlight of highlighted">
+                <img src={{highlight.image}} alt="img">
+                <h4>{{highlight.label}}</h4>
             </div>
         </a>
-        <div class="featured-stories-list">
+        <ul class="featured-stories-list">
             <li class="featured-story-item" *ngFor="let option of info">
             <a class="featured-story-link" routerLink="{{option.url}}">
                 <h4>{{option.label}}</h4>
             </a>
         </li>
             <a class="featured-stories-seemore" href="/"> See More</a>
-        </div>
-    </section>
-</div>
+        </ul>
+    </div>
+</section>
