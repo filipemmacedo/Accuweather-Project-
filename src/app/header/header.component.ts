@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from '../weather.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -30,7 +29,7 @@ export class HeaderComponent implements OnInit {
     '../../assets/img/background/night6.jpg',
   ]
 
-  constructor(private weather:WeatherService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.currentBackground = this.getBackgroundImage();
