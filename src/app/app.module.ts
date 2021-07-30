@@ -29,6 +29,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { VideosComponent } from './videos/videos.component';
 import { ListnewsComponent } from './listnews/listnews.component';
 import { NewsComponent } from './news/news.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { NewsComponent } from './news/news.component';
     VideosComponent,
     ListnewsComponent,
     NewsComponent,
+    IntroComponent,
   ],
   imports: [
     BrowserModule,
